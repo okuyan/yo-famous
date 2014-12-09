@@ -6,7 +6,11 @@ module.exports = {
       src: [
         '.tmp',
         '<%= config.dist %>/*',
-        '!<%= config.dist %>/.git*'
+        '!<%= config.dist %>/.git*',
+        '!<%= config.dist %>/Procfile',
+        '!<%= config.dist %>/package.json',
+        '!<%= config.dist %>/web.js',
+        '!<%= config.dist %>/node_modules'
       ]
     }]
   },
